@@ -6,6 +6,7 @@ import com.example.ddi_tarea6.domain.Alarm
 class LocalXmlDataSource(private val context: Context) {
 
 
+
     private val alarms = listOf(
         Alarm("1", "08:00", "Alarma despertador", "Sonar una vez"),
         Alarm("2", "12:00", "Alarma", "Sonar una vez"),
@@ -17,5 +18,7 @@ class LocalXmlDataSource(private val context: Context) {
         Alarm("8", "23:23", "Alarma despertador", "My mercy prevails over my wrath")
 
     )
-
+    private fun getAlarms(): List<Alarm> {
+        return alarms
+    }
 }
