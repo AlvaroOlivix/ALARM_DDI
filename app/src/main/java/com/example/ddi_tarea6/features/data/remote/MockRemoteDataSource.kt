@@ -1,9 +1,11 @@
-package com.example.ddi_tarea6.data.local
+package com.example.ddi_tarea6.features.data.remote
 
 import android.content.Context
-import com.example.ddi_tarea6.domain.Alarm
+import com.example.ddi_tarea6.features.domain.Alarm
+import org.koin.core.annotation.Single
 
-class LocalXmlDataSource(private val context: Context) {
+@Single
+class MockRemoteDataSource(private val context: Context) {
 
 
 
@@ -18,7 +20,7 @@ class LocalXmlDataSource(private val context: Context) {
         Alarm("8", "23:23", "Alarma despertador", "My mercy prevails over my wrath")
 
     )
-    private fun getAlarms(): List<Alarm> {
+    fun getAlarms(): List<Alarm> {
         return alarms
     }
 }

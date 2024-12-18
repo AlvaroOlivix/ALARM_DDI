@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">DDI_Tarea6</string>
+    <string name="data_local">Data Local</string>
 </resources>

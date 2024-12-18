@@ -1,4 +1,4 @@
-package com.example.ddi_tarea6.domain
+package com.example.ddi_tarea6.features.domain
 
 class Alarm(
     val id: String,
