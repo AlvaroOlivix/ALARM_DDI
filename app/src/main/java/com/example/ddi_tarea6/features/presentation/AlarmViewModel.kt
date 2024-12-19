@@ -8,7 +8,7 @@ import com.example.ddi_tarea6.features.domain.GetAlarmsUseCase
 import org.koin.android.annotation.KoinViewModel
 
 @KoinViewModel
-class AdapterViewModel(private val getAlarmsUseCase: GetAlarmsUseCase) : ViewModel() {
+class AlarmViewModel(private val getAlarmsUseCase: GetAlarmsUseCase) : ViewModel() {
     private val _uiState = MutableLiveData<UiState>()
     val uiState: LiveData<UiState> = _uiState
 
@@ -18,7 +18,6 @@ class AdapterViewModel(private val getAlarmsUseCase: GetAlarmsUseCase) : ViewMod
             UiState(alarms = alarms)
         )
     }
-
 
     data class UiState(
         val alarms: List<Alarm>? = null

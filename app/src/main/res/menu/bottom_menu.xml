@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/menu_item1"
+        android:title="Alarma"
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_access_alarm_24"/>
+    <item
+        android:id="@+id/menu_item2"
+        android:title="Reloj Mundial"
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_language_24"/>
+    <item
+        android:id="@+id/menu_item3"
+        android:title="Cronometro"
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_timer_24"/>
+    <item
+        android:id="@+id/menu_item4"
+        android:title="Temporizador"
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_hourglass_empty_24"/>
+</menu>
